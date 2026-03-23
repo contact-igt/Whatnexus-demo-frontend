@@ -24,7 +24,7 @@ const requestDemoSchema = z.object({
                 message: "Please enter a valid email",
             }
         ),
-    country_code: z.string().default("+91"),
+    country_code: z.string(),
     mobile: z.string().min(1, "Mobile is required").regex(/^\d{10}$/, "Mobile number must be 10 digits"),
     industry: z.string().min(1, "Industry is required"),
 });
