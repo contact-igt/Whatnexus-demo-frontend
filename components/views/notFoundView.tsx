@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { Home, ArrowLeft, Search, AlertTriangle } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { BRAND_NAME } from '@/lib/data';
+const BRAND_NAME = "WhatsNexus";
 
 interface NotFoundViewProps {
     isDarkMode: boolean;
@@ -115,7 +115,7 @@ export const NotFoundView = ({ isDarkMode }: NotFoundViewProps) => {
                         )}
                     >
                         <Home size={18} className="transition-transform group-hover:scale-110" />
-                        Home Dashboard
+                        Home
                     </button>
                 </div>
 
